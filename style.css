@@ -83,3 +83,44 @@ hr
         flex-direction: column;
     }
 }
+
+@keyframes floatCard
+{
+    0%
+    {
+        transform: translateY(0px);
+    }
+
+    50%
+    {
+        transform: translateY(-6px);
+    }
+
+    100%
+    {
+        transform: translateY(0px);
+    }
+}
+
+.mainHoliday
+{
+    animation: floatCard 3s ease-in-out infinite;
+}
+
+body
+{
+    animation: fadePage 0.7s ease;
+}
+
+@keyframes fadePage
+{
+    from
+    {
+        opacity: 0;
+    }
+
+    to
+    {
+        opacity: 1;
+    }
+}
