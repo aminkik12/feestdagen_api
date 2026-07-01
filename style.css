@@ -1,5 +1,8 @@
 body
 {
+/* Main container that holds all website content */
+   /* Keeps everything centered and grouped together */
+
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     background: linear-gradient(135deg,#141E30,#243B55);
@@ -14,6 +17,9 @@ h1
 
 .container
 {
+ /* Main container that holds all website content */
+    /* Keeps everything centered and grouped together */
+
     width: 90%;
     max-width: 900px;
     margin: 40px auto;
@@ -21,6 +27,9 @@ h1
     background: rgba(255,255,255,0.08);
     border-radius: 20px;
     backdrop-filter: blur(10px);
+
+     /* Adds a glassmorphism effect */
+    /* Makes the website look modern and easier to read */
 }
 .mainHoliday
 {
@@ -43,11 +52,16 @@ h1
 
 .mainHoliday:hover
 {
+    /* Runs when the mouse is over the main holiday card */
+    /* Gives visual feedback and makes the card feel interactive */
     transform: translateY(-8px);
     box-shadow: 0 0 20px #00d4ff;
 }
 #upcomingHolidays
 {
+ /* Uses Flexbox */
+    /* Places the three holiday cards next to each other automatically */
+
     display: flex;
     justify-content: space-between;
     gap: 20px;
@@ -56,6 +70,8 @@ h1
 
 .holidayCard
 {
+     /* Makes every holiday card take equal space */
+    /* Keeps all cards the same size */
     flex: 1;
     background: rgba(255,255,255,0.12);
     border-radius: 15px;
@@ -66,6 +82,9 @@ h1
 
 .holidayCard:hover
 {
+ /* Hover animation */
+    /* Makes the card lift slightly and glow */
+
     transform: translateY(-8px);
     box-shadow: 0 0 20px #00d4ff;
 }
@@ -78,11 +97,18 @@ hr
 
 @media (max-width: 768px)
 {
+ /* Responsive design */
+    /* Stacks the cards vertically on smaller screens */
+
+    
     #upcomingHolidays
     {
         flex-direction: column;
     }
 }
+
+/* Defines a floating animation */
+    /* Gives the main holiday card a smooth up-and-down movement */
 
 @keyframes floatCard
 {
@@ -102,16 +128,25 @@ hr
     }
 }
 
+
+/* Starts the floating animation */
+    /* Makes the main holiday stand out from the others */
 .mainHoliday
 {
     animation: floatCard 3s ease-in-out infinite;
 }
 
+
+/* Fade-in animation when the page loads */
+    /* Makes the website appear smoothly instead of instantly */
 body
 {
     animation: fadePage 0.7s ease;
 }
 
+
+/* Defines the fade-in animation */
+    /* Changes the page from transparent to fully visible */
 @keyframes fadePage
 {
     from

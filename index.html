@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
+
+     <!-- Character encoding for special Dutch characters -->
+    <!-- Makes sure letters like é, ë and emojis display correctly -->
     <meta charset="UTF-8">
+
+  <!-- Makes the website responsive on phones and tablets -->
+    <!-- Ensures the layout scales correctly on different screen sizes -->   
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feestdagen Nederland</title>
     <link rel="stylesheet" href="style.css">
@@ -10,11 +16,17 @@
 
     <h1>Feestdagen Nederland</h1>
 
+ <!-- Main container for all holiday information -->
+    <!-- Keeps everything together so CSS can style it as one card -->
     <div class="container">
 
     <h2>🎉 Eerstvolgende feestdag</h2>
-
+<!-- Main holiday card -->
+        <!-- JavaScript updates this card with the next holiday -->
     <div class="mainHoliday">
+  <!-- ID used by JavaScript -->
+            <!-- Displays the holiday name received from the API -->
+             <!-- Displays the holiday date -->
 
         <h3 id="holidayName">Loading...</h3>
 
@@ -25,13 +37,17 @@
     <hr>
 
     <h3>Komende feestdagen</h3>
+<!-- Container for the next 3 holidays -->
+        <!-- JavaScript automatically creates the holiday cards here -->
+
 
     <div id="upcomingHolidays">
     Loading holidays...
 </div>
 
 </div>
-    
+<!-- Loads the JavaScript file -->
+    <!-- Runs all code that fetches and displays the holiday data --> 
 
     <script src="script.js"></script>
 
